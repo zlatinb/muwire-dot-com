@@ -233,19 +233,12 @@ if (window.mobileAndTabletCheck()) {
 .accordion {
   border-radius:6px;
   color: #444;
-  padding: 18px;
+  padding: 8px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
   transition: 0.8s;
-}
-
-.bullet {
-  float: left;
-  font-size: 35px;
-  color: black;
-  margin-top: -0.2em;
 }
 
 .featureName {
@@ -344,7 +337,6 @@ Please click on the features menu above to see the different features MuWire off
 </noscript>
 <div id="features">
 <div class="accordion">
-<div class="bullet">&bull;</div>
 <p class="featureName">Finding files shared by others</p>
 <div class="panel">
 You can search by keywords or by file hash.  All keywords have to match for a result to be returned.
@@ -353,7 +345,6 @@ If want to share or find a specific file you can use the hash to make sure it is
 </div>
 
 <div class="accordion">
-<div class="bullet">&bull;</div>
 <p class="featureName">Sharing your own files</p>
 <div class="panel">
 You can <a class="panelLink" href="/sharing.html">share your own files</a> with other MuWire
@@ -372,7 +363,6 @@ for a file you share to prove to others that you have the file.</li>
 </div>
 
 <div class="accordion">
-<div class="bullet">&bull;</div>
 <p class="featureName">Messages And Chat</p>
 <div class="panel">
 You can <a class="panelLink" href="/chat.html">communicate with other MuWire users</a> anonymously.
@@ -380,7 +370,6 @@ You can <a class="panelLink" href="/chat.html">communicate with other MuWire use
 </div>
 
 <div class="accordion">
-<div class="bullet">&bull;</div>
 <p class="featureName">Web of Trust</p>
 <div class="panel">
 You can choose to <a class="panelLink" href="/trust.html">trust or distrust</a> other MuWire users,
@@ -397,7 +386,7 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("mouseenter", function() {
     var button = this.getElementsByTagName("p")[0]
     button.classList.toggle("active");
-    var panel = this.getElementsByTagName("div")[1]
+    var panel = this.getElementsByTagName("div")[0]
     panel.style.maxHeight = panel.scrollHeight + "px";
     panel.style.border = "3px solid black"
     panel.style.padding = "0.2em 18px 0.2em"
@@ -405,7 +394,7 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("mouseleave", function() {
     var button = this.getElementsByTagName("p")[0]
     button.classList.toggle("active");
-    var panel = this.getElementsByTagName("div")[1]
+    var panel = this.getElementsByTagName("div")[0]
     panel.style.maxHeight = null;
     panel.style.border = null
     panel.style.padding = null
