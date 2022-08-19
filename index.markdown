@@ -233,19 +233,12 @@ if (window.mobileAndTabletCheck()) {
 .accordion {
   border-radius:6px;
   color: #444;
-  padding: 18px;
+  padding: 8px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
   transition: 0.8s;
-}
-
-.bullet {
-  float: left;
-  font-size: 35px;
-  color: black;
-  margin-top: -0.2em;
 }
 
 .featureName {
@@ -344,8 +337,7 @@ Please click on the features menu above to see the different features MuWire off
 </noscript>
 <div id="features">
 <div class="accordion">
-<div class="bullet">&bull;</div>
-<p class="featureName">Search by keyword or file hash</p>
+<p class="featureName">Finding files shared by others</p>
 <div class="panel">
 You can search by keywords or by file hash.  All keywords have to match for a result to be returned.
 If want to share or find a specific file you can use the hash to make sure it is the right one.  You can also use <a class="panelLink" href="/search-phrases.html">Search Phrases</a>.<br/>
@@ -353,46 +345,39 @@ If want to share or find a specific file you can use the hash to make sure it is
 </div>
 
 <div class="accordion">
-<div class="bullet">&bull;</div>
-<p class="featureName">Comments and Collections</p>
+<p class="featureName">Sharing your own files</p>
 <div class="panel">
-You can add comments to your shared files with MuWire or by using <a class="panelLink" href="/sidecar-files.html">Sidecar Files</a>.<br/>  When someone searches for a keyword that is present in a comment, they will see a search result for that file.<br/>
-You can group several files together into a <a href="/collections.html">Collection</a>.
+You can <a class="panelLink" href="/sharing.html">share your own files</a> with other MuWire
+users, with several options:
+<ul><li>You can organize the files into
+<a class="panelLink" href="/file-feeds.html">automatic feeds</a> like for a blog.</li>
+<li>You can <a class="panelLink" href="/sidecar-files.html">add comments</a>
+about your shared files.</li>
+<li>You can <a href="/file-certificates.html">issue a certificate</a>
+for a file you share to prove to others that you have the file.</li>
+<li>You can group several files together into a
+<a class="panelLink" href="/collections.html">Collection</a>.</li>
+</ul>
+
 </div>
 </div>
 
 <div class="accordion">
-<div class="bullet">&bull;</div>
-<p class="featureName">File Feeds</p>
-<div class="panel">
-You can publish your shared files to your personal feed, and subscribe to the feeds of other users.  This is similar to following someone on a social network.  For more info see <a class="panelLink" href="/file-feeds.html">File Feeds</a>.
-</div>
-</div>
-
-<div class="accordion">
-<div class="bullet">&bull;</div>
 <p class="featureName">Messages And Chat</p>
 <div class="panel">
-You can communicate with other MuWire users anonymously.  For more information, see <a class="panelLink" href="/chat.html">MuWire Communications</a>.
+You can <a class="panelLink" href="/chat.html">communicate with other MuWire users</a> anonymously.
 </div>
 </div>
 
 <div class="accordion">
-<div class="bullet">&bull;</div>
-<p class="featureName">File Certificates</p>
-<div class="panel">
-You can issue a certificate for a file you share to prove to others that you have the file.  For more info see <a class="panelLink" href="/file-certificates.html">File Certificates</a>
-</div>
-</div>
-
-<div class="accordion">
-<div class="bullet">&bull;</div>
 <p class="featureName">Web of Trust</p>
 <div class="panel">
-You can choose to trust or distrust other MuWire users, and see who they trust and distrust in turn.  For more information see <a class="panelLink" href="/trust.html">Trust In MuWire</a>. 
+You can choose to <a class="panelLink" href="/trust.html">trust or distrust</a> other MuWire users,
+and see who they trust and distrust in turn.
 </div>
 </div>
 </div>
+
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -401,7 +386,7 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("mouseenter", function() {
     var button = this.getElementsByTagName("p")[0]
     button.classList.toggle("active");
-    var panel = this.getElementsByTagName("div")[1]
+    var panel = this.getElementsByTagName("div")[0]
     panel.style.maxHeight = panel.scrollHeight + "px";
     panel.style.border = "3px solid black"
     panel.style.padding = "0.2em 18px 0.2em"
@@ -409,7 +394,7 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("mouseleave", function() {
     var button = this.getElementsByTagName("p")[0]
     button.classList.toggle("active");
-    var panel = this.getElementsByTagName("div")[1]
+    var panel = this.getElementsByTagName("div")[0]
     panel.style.maxHeight = null;
     panel.style.border = null
     panel.style.padding = null
