@@ -48,6 +48,6 @@ Of course you will want to know if anybody is reading your stuff.
 * If you right-click on a file in the **Library** view and choose "Show file details" you can see how many searches have discovered the file, the keyword that matched, and who downloaded it.
 
 ## Tips
-* MuWire keeps track of files by a hash of their contents, not the file *name*.  Once a file has been published, you should avoid modifying it.
+* MuWire keeps track of files by tracking fingerprints of their *contents*, not the file *names*.  Once a file has been published, you should avoid modifying it so that MuWire does not become confused about how many files there are.
 
 * There are [performance issues](many-files) if you are sharing a large number of files.
