@@ -340,7 +340,7 @@ Please click on the features menu above to see the different features MuWire off
 <p class="featureName">Finding files shared by others</p>
 <div class="panel">
 You can search by keywords or by file hash.  All keywords have to match for a result to be returned.
-If want to share or find a specific file you can use the hash to make sure it is the right one.  You can also use <a class="panelLink" href="/search-phrases.html">Search Phrases</a>.<br/>
+If you want to share or find a specific file you can use the hash to make sure it is the right one.  You can also use <a class="panelLink" href="/search-phrases.html">Search Phrases</a>.<br/>
 </div>
 </div>
 
