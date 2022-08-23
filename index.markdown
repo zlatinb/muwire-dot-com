@@ -13,8 +13,8 @@ permalink: /
 </div>
 <script language="JavaScript">
 
-const VERSION="0.8.12"
-const beta=true
+const VERSION="0.8.13"
+const beta=false
 
 <!--
 // This script sets OSName variable as follows:
@@ -200,7 +200,8 @@ if (window.mobileAndTabletCheck()) {
         document.write('<a class="get-beta" href="https://muwire.com/beta.html">Get MuWire BETA</a></br>')
     document.write("<a class='platforms' href='https://muwire.com/index-nojs.html'>other platforms</a></br>")
 } else if (OSName == "MacOS") {
-    document.write('<a class="get-muwire" href="https://muwire.com/downloads/MuWire-' + VERSION +'.dmg">Get MuWire ' + VERSION + ' for Mac OS</a></br>');
+    document.write('<a class="get-muwire" href="https://muwire.com/downloads/MuWire-' + VERSION +'.dmg">Get MuWire ' + VERSION + ' for Intel Macs</a></br>');
+    document.write('<a class="get-muwire" href="https://muwire.com/downloads/MuWire-arm64-' + VERSION +'.dmg">Get MuWire ' + VERSION + ' for Apple Macs</a></br>');
     if (beta)
         document.write('<a class="get-beta" href="https://muwire.com/beta.html">Get MuWire BETA</a></br>')
     document.write("<a class='platforms' href='https://muwire.com/index-nojs.html'>other platforms</a></br>")
@@ -318,12 +319,6 @@ div#dedicated {
 </style>
 
 ## Running MuWire
-<center>
-<div class="tooltip">
-The first time you start MuWire it takes a few minutes to connect. 
-<span class="tooltiptext">MuWire uses the I2P network to provide anonymity.  Connecting to I2P for the first time can take a while.</span>
-</div>
-</center>
 The first time you run MuWire it will ask you to choose a nickname.  That nickname is combined with a cryptographically strong I2P address and forms your unique identity on MuWire.  For more info see <a href="/nicknames.html">MuWire Nicknames</a>.
 
 ## Features
