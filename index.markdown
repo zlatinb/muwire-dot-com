@@ -14,7 +14,7 @@ permalink: /
 <script language="JavaScript">
 
 const VERSION="0.8.13"
-const beta=false
+const beta=true
 
 <!--
 // This script sets OSName variable as follows:
