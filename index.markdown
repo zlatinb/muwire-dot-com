@@ -104,11 +104,6 @@ h2.left {
 <h2>Download</h2>
 <center>
 <noscript>
-<style>
-a.get-muwire {
-	display: block;
-}
-</style>
 <p>You do not have JavaScript enabled so your OS cannot be detected.  Please choose one of the following download options:</p>
 {% include platforms.html %}
 </noscript>
